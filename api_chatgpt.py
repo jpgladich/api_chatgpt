@@ -1,6 +1,7 @@
 import openai
-
-
+import typer
+from rich import print
+from rich.table import Table
 
 """
 Info:
@@ -13,6 +14,13 @@ def main():
     
     # Set openai api key
     openai.api_key_path =  "api_key_path/apikey"
+    
+    print("[bold red]ChatGPT[/bold red] - [bold green]use API[/bold green] - [bold blue]OpenAI[/bold blue]")
+    
+    table = Table("Command", "Description")
+    table.add_row("exit", "Exit script")
+    
+    print(table)
         
     # Set context "system"
     messages = [{"role": "system", "content": "Assistant Devops, programmer, sysadmin"}]
@@ -37,4 +45,4 @@ def main():
                                                                                
     
 if __name__ == "__main__":
-    main()
+    typer.run(main)
