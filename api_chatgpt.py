@@ -17,12 +17,12 @@ def main():
     # Set openai api key
     openai.api_key_path =  "api_key_path/apikey"
     
-    print("[bold red]ChatGPT[/bold red] - [bold green]use API[/bold green] - [bold blue]Script[/bold blue]")
+    print("[bold red]ChatGPT[/bold red] - [bold blue]API[/bold blue] - [bold green]Script[/bold green]")
     
     table = Table("Command", "Description")
-    table.add_row("exit", "Exit script")
-    table.add_row("new", "Create new chat context")
-    table.add_row("save", "Save chat context in local file")
+    table.add_row("[bold red]exit[/bold red]", "[bold red]Exit script.[/bold red]")
+    table.add_row("[bold blue]new[/bold blue]", "[bold blue]Create new chat context.[/bold blue]")
+    table.add_row("[bold green]save[bold green]", "[bold green]Save chat context in local file.[/bold green]")
 
     
     print(table)
