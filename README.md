@@ -1,5 +1,5 @@
 # api_chatgpt
-Use ChatGPT API from python
+Use ChatGPT API from python.
 
 # Install
 ```
